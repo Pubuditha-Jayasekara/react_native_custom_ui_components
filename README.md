@@ -20,7 +20,7 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ### 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](CONTRIBUTING.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
