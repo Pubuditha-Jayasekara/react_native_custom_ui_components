@@ -37,7 +37,7 @@ const ButtonsScreen = () => {
         image={renderImage()} // Replace with actual image
         imagePosition={BUTTON_IMAGE_POSITION.LEFT}
         title="Button with Image on the Left"
-        titlePosition={BUTTON_TITLE_POSITION.MIDDLE}
+        titlePosition={BUTTON_TITLE_POSITION.BOTTOM}
         titleStyle={{fontSize: 16, fontWeight: 'bold'}}
         containerStyle={{
           backgroundColor: 'blue',
