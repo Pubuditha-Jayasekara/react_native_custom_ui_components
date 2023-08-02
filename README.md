@@ -10,9 +10,7 @@ Introducing "rn_custom_ui_components," a comprehensive UI library with user-frie
 
 The CustomButton component from the rn_custom_ui_components package allows you to create customizable buttons with images and text. It provides various options to position the image and text within the button.
 
-
 ### ⚙️ Usage
-
 
 ### 🛠 Contributing
 
@@ -23,4 +21,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
