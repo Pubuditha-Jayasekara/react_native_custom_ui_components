@@ -1,9 +1,8 @@
-import { scale } from "./scale";
-import { StyleSheet } from "react-native";
-import commonColors from "./colors";
+import { scale } from './scale';
+import { StyleSheet } from 'react-native';
+import commonColors from './colors';
 
 export const defaultStyles = StyleSheet.create({
-
   //MARK: flex size
   flex1: {
     flex: 1,
@@ -36,7 +35,7 @@ export const defaultStyles = StyleSheet.create({
     flex: 10,
   },
 
-//MARK: flex grow
+  //MARK: flex grow
   flexGrow1: {
     flexGrow: 1,
   },
@@ -70,99 +69,102 @@ export const defaultStyles = StyleSheet.create({
 
   //MARK: flex direction
   flexDirectionRow: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   flexDirectionColumn: {
-    flexDirection: "column",
+    flexDirection: 'column',
   },
-  flexDirectionRowReverse: {flexDirection:"row-reverse" },
+  flexDirectionRowReverse: { flexDirection: 'row-reverse' },
 
   //MARK: flex wrap
   flexWrap: {
-    flexWrap: "wrap",
+    flexWrap: 'wrap',
   },
 
   //MARK: position
   positionAbsolute: {
-    position: "absolute",
+    position: 'absolute',
   },
   positionRelative: {
-    position: "relative",
+    position: 'relative',
   },
 
   //MARK: content and container alignment
   justifyCenter: {
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   alignCenter: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   alignStart: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
   },
   alignSelfFlexEnd: {
-    alignSelf: "flex-end",
+    alignSelf: 'flex-end',
   },
   alignSelfFlexStart: {
-    alignSelf: "flex-start",
+    alignSelf: 'flex-start',
   },
   alignSelfCenter: {
-    alignSelf: "center",
+    alignSelf: 'center',
   },
   contentCenter: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   alignContentCenter: {
-    alignContent: "center",
+    alignContent: 'center',
   },
   alignItemsEnd: {
-    alignItems: "flex-end",
+    alignItems: 'flex-end',
   },
   alignItemsCenter: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   alignItemsStart: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
   },
   justifySpaceBetween: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   justifySpaceEvenly: {
-    justifyContent: "space-evenly",
+    justifyContent: 'space-evenly',
   },
   justifyFlexStart: {
-    justifyContent: "flex-start",
+    justifyContent: 'flex-start',
   },
   justifyFlexEnd: {
-    justifyContent: "flex-end",
+    justifyContent: 'flex-end',
+  },
+  justifyContentCenter: {
+    justifyContent: 'center',
   },
 
-  //MARK: over flow 
+  //MARK: over flow
   overflowHidden: {
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   overflowScroll: {
-    overflow: "scroll",
+    overflow: 'scroll',
   },
 
   //MARK: text alignments
   textAlignCenter: {
-    textAlign: "center",
+    textAlign: 'center',
   },
   textAlignLeft: {
-    textAlign: "left",
+    textAlign: 'left',
   },
   textAlignRight: {
-    textAlign: "right",
+    textAlign: 'right',
   },
 
   //MARK: text styles
   underLineText: {
-    textDecorationLine: "underline",
+    textDecorationLine: 'underline',
   },
 
-  //MARK: text line height 
+  //MARK: text line height
   lineHeight1: { lineHeight: scale(1) },
   lineHeight2: { lineHeight: scale(2) },
   lineHeight3: { lineHeight: scale(3) },
@@ -266,15 +268,15 @@ export const defaultStyles = StyleSheet.create({
 
   //MARK:  font types
   Circe_Bold: {
-    fontFamily: "CirceBold-Bold",
+    fontFamily: 'CirceBold-Bold',
   },
   Circe_Regular: {
-    fontFamily: "Circe-Regular",
+    fontFamily: 'Circe-Regular',
   },
 
   //MARK: font styles
   fontWeightBold: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
 
   letterSpacing2: {
@@ -471,21 +473,33 @@ export const defaultStyles = StyleSheet.create({
   bgColorLinen_FAF0E6: { backgroundColor: commonColors.linen_FAF0E6 },
   bgColorBisque_FFE4C4: { backgroundColor: commonColors.bisque_FFE4C4 },
   bgColorHoneydew_F0FFF0: { backgroundColor: commonColors.honeydew_F0FFF0 },
-  bgColorLemonchiffon_FFFACD: { backgroundColor: commonColors.lemonchiffon_FFFACD },
+  bgColorLemonchiffon_FFFACD: {
+    backgroundColor: commonColors.lemonchiffon_FFFACD,
+  },
   bgColorMistyrose_FFE4E1: { backgroundColor: commonColors.mistyrose_FFE4E1 },
   bgColorMoccasin_FFE4B5: { backgroundColor: commonColors.moccasin_FFE4B5 },
-  bgColorNavajowhite_FFDEAD: { backgroundColor: commonColors.navajowhite_FFDEAD },
+  bgColorNavajowhite_FFDEAD: {
+    backgroundColor: commonColors.navajowhite_FFDEAD,
+  },
   bgColorOldlace_FDF5E6: { backgroundColor: commonColors.oldlace_FDF5E6 },
   bgColorPapayawhip_FFEFD5: { backgroundColor: commonColors.papayawhip_FFEFD5 },
   bgColorSeashell_FFF5EE: { backgroundColor: commonColors.seashell_FFF5EE },
   bgColorSnow_FFFAFA: { backgroundColor: commonColors.snow_FFFAFA },
   bgColorWhitesmoke_F5F5F5: { backgroundColor: commonColors.whitesmoke_F5F5F5 },
-  bgColorYellowgreen_9ACD32: { backgroundColor: commonColors.yellowgreen_9ACD32 },
-  bgColorAntiquewhite_FAEBD7: { backgroundColor: commonColors.antiquewhite_FAEBD7 },
-  bgColorCornflowerblue_6495ED: { backgroundColor: commonColors.cornflowerblue_6495ED },
+  bgColorYellowgreen_9ACD32: {
+    backgroundColor: commonColors.yellowgreen_9ACD32,
+  },
+  bgColorAntiquewhite_FAEBD7: {
+    backgroundColor: commonColors.antiquewhite_FAEBD7,
+  },
+  bgColorCornflowerblue_6495ED: {
+    backgroundColor: commonColors.cornflowerblue_6495ED,
+  },
   bgColorDarkblue_00008B: { backgroundColor: commonColors.darkblue_00008B },
   bgColorDarkcyan_008B8B: { backgroundColor: commonColors.darkcyan_008B8B },
-  bgColorDarkgoldenrod_B8860B: { backgroundColor: commonColors.darkgoldenrod_B8860B },
+  bgColorDarkgoldenrod_B8860B: {
+    backgroundColor: commonColors.darkgoldenrod_B8860B,
+  },
   bgColorDarkgray_A9A9A9: { backgroundColor: commonColors.darkgray_A9A9A9 },
   bgColorDarkgreen_006400: { backgroundColor: commonColors.darkgreen_006400 },
 
@@ -503,12 +517,12 @@ export const defaultStyles = StyleSheet.create({
 
   //MARK: width
   width100: {
-    width: "100%",
+    width: '100%',
   },
 
   //MARK: height
   height100: {
-    height: "100%",
+    height: '100%',
   },
 
   //MARK: margin top
@@ -1064,7 +1078,6 @@ export const defaultStyles = StyleSheet.create({
   borderRadius98: { borderRadius: scale(98) },
   borderRadius99: { borderRadius: scale(99) },
   borderRadius100: { borderRadius: scale(100) },
- 
 });
 
 export default defaultStyles;

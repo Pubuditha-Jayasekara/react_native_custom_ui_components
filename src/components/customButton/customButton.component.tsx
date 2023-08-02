@@ -1,10 +1,26 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity, ActivityIndicator, Image } from "react-native";
-import { ICustomButton, BUTTON_IMAGE_POSITION } from "./customButton.interface";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  ActivityIndicator,
+  Image,
+} from "react-native";
+import { type ICustomButton } from "./customButton.interface";
 import defaultStyles from "../shared/styles/styles";
-import { BUTTON_TITLE_POSITION } from "./customButton.enum";
+import {
+  BUTTON_IMAGE_POSITION,
+  BUTTON_TITLE_POSITION,
+} from "./customButton.enum";
 
-const { flexDirectionRow, flexDirectionColumn, flexDirectionRowReverse, alignItemsCenter, justifyContentCenter, opacityOne, opacity5 } = defaultStyles;
+const {
+  flexDirectionRow,
+  flexDirectionRowReverse,
+  alignItemsCenter,
+  justifyContentCenter,
+  opacityOne,
+  opacity5,
+} = defaultStyles;
 
 const CustomButton = (props: ICustomButton) => {
   const {
@@ -38,15 +54,19 @@ const CustomButton = (props: ICustomButton) => {
     setIsLoading(false);
   };
 
+  // const renderImage = () => {
+  //   if (image) {
+  //     if (!showImageLoadingIndicator || !isLoading) {
+  //       return <Image source={image} />;
+  //     } else {
+  //       return imageLoadingIndicator || <ActivityIndicator />;
+  //     }
+  //   }
+  //   return null;
+  // };
+
   const renderImage = () => {
-    if (image) {
-      if (!showImageLoadingIndicator || !isLoading) {
-        return <Image source={image} />;
-      } else {
-        return imageLoadingIndicator || <ActivityIndicator />;
-      }
-    }
-    return null;
+    return image;
   };
 
   const renderImageTextPosition = () => {
@@ -105,9 +125,12 @@ const CustomButton = (props: ICustomButton) => {
         ]}
       >
         {/* Render the image/icon and title/text based on the specified titlePosition */}
-        {titlePosition === BUTTON_TITLE_POSITION.TOP && renderImageTextPosition()}
-        {titlePosition === BUTTON_TITLE_POSITION.BOTTOM && renderImageTextPosition()}
-        {titlePosition === BUTTON_TITLE_POSITION.MIDDLE && renderImageTextPosition()}
+        {titlePosition === BUTTON_TITLE_POSITION.TOP &&
+          renderImageTextPosition()}
+        {titlePosition === BUTTON_TITLE_POSITION.BOTTOM &&
+          renderImageTextPosition()}
+        {titlePosition === BUTTON_TITLE_POSITION.MIDDLE &&
+          renderImageTextPosition()}
       </View>
     </TouchableOpacity>
   );

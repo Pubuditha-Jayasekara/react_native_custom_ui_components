@@ -1,5 +1,7 @@
-import { ImageSourcePropType } from "react-native";
-import type { export BUTTON_IMAGE_POSITION, BUTTON_TITLE_POSITION } from "./customButton.enum";
+import {
+  BUTTON_IMAGE_POSITION,
+  BUTTON_TITLE_POSITION,
+} from "./customButton.enum";
 
 // Interface for custom button properties.
 export interface ICustomButton {
@@ -21,9 +23,6 @@ export interface ICustomButton {
   // When true, the button will be visually displayed as disabled.
   showAsDisabled?: boolean;
 
-  // The image/icon to be displayed on the button.
-  imageIcon?: any;
-
   // The URL for the image/icon to be displayed on the button.
   imageIconUrl?: string;
 
@@ -43,7 +42,7 @@ export interface ICustomButton {
   imageLoadingIndicator?: any;
 
   // The image to be displayed on the button.
-  image?: ImageSourcePropType;
+  image?: any;
 
   // The position of the image relative to the title/text.
   imagePosition?: BUTTON_IMAGE_POSITION;
